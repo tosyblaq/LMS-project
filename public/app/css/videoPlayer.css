@@ -1,0 +1,101 @@
+.screen{
+    cursor: pointer;
+    width: 60%;
+    background-color: #000 !important;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.controls{
+    background-color: #333 !important;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center;
+    padding: 10px;
+    width: 60%;
+    z-index: 2147483647;
+}
+
+
+/* #videoContainer {
+    z-index: 2147483647;
+  } */
+
+.ProgressDiv{
+    color: #fff;
+    width: 60%;
+    z-index: 2147483647;
+}
+
+.controls .videoBtn{
+    border: 0;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.control{
+    background-color: #000;
+    width: 60%;
+}
+
+#volumeslider{ 
+    width: 180px;
+}
+
+.controls .fa-play{
+    color: #28a745;
+}
+
+.controls .fa-stop{
+    color: #dc3545;
+}
+
+.controls .fa-pause{
+    color: #fff;
+}
+
+.btn:focus {
+    outline: 0 !important;
+}
+
+.fa-volume-up, .fa-volume-down, .fa-expand{
+    cursor: pointer;
+}
+
+
+video::-webkit-media-controls-enclosure {
+	display:none !important;
+}
+
+figure[data-fullscreen=true] {
+	max-width:100%;
+	width:100%;
+	margin:0;
+	padding:0;
+	max-height:100%;
+}
+
+figure[data-fullscreen=true] video {
+	height:auto;
+}
+
+figure[data-fullscreen=true] .controls {
+	position:absolute;
+	bottom:2%;
+	width:100%;
+	z-index:2147483647;
+}
+figure[data-fullscreen=true] .controls .progress {
+	width:68%;
+}
+
+
+@media (max-width: 800px) {
+    .screen,
+    .controls, .ProgressDiv {
+      width: 100%;   
+    }
+  }
